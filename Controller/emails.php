@@ -1,7 +1,17 @@
 <?php 
+// Inclui o arquivo class.phpmailer.php localizado na mesma pasta do arquivo php 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+require 'vendor/autoload.php';
 
     class Emails{
-        function enviar_email($email, $nome, $tag){
+
+        function enviar_email($email, $nome, $senha, $tag){
+
+            // Inicia a classe PHPMailer 
+            $mail = new PHPMailer();
+
             // Método de envio 
             $mail->IsSMTP();
 
