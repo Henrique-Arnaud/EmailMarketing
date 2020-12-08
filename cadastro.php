@@ -1,6 +1,7 @@
 <?php   
 
 include('senha.php');
+include('arquivocsv.php');
 
 // Inclui o arquivo class.phpmailer.php localizado na mesma pasta do arquivo php 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -13,11 +14,14 @@ $nome = $_POST['nome'];
 
 $senha = new Senha();
 
+//inicia a classe de ler arquivos csv
+$csv = new ArquivosCsv();
+
 // Inicia a classe PHPMailer 
 $mail = new PHPMailer(); 
 
 // Método de envio 
-$mail->IsSMTP(); 
+$mail->IsSMTP();
 
 // Enviar por SMTP 
 $mail->Host = "mail.pupill.us"; 
@@ -40,7 +44,7 @@ $mail->Password = $senha->_senha;
 $mail->SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true ) ); 
 
 // Você pode habilitar esta opção caso tenha problemas. Assim pode identificar mensagens de erro. 
- $mail->SMTPDebug = 1; 
+ $mail->SMTPDebug = 0; 
 
 // Define o remetente 
 // Seu e-mail 
@@ -67,6 +71,8 @@ $mail->msgHTML(file_get_contents('email.html'), __DIR__);
 
 // Envia o e-mail 
 $enviado = $mail->Send(); 
+
+$csv->ler_arquivo();
 
 // Exibe uma mensagem de resultado 
 if ($enviado) 
