@@ -11,6 +11,7 @@ require 'vendor/autoload.php';
 
 $email = $_POST['email'];
 $nome = $_POST['nome'];
+$tag = $_POST['tag'];
 
 
 $senha = new Senha();
