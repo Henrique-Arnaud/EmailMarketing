@@ -2,16 +2,16 @@
 class ArquivosCsv{
 
     function ler_arquivo(){
-        $handle = fopen("../Model/file.csv", "r");
+    $arquivo = fopen("../Model/file.csv", "r");
 
-    $header = fgetcsv($handle, 1000, ",");
+    $header = fgetcsv($arquivo, 1000, ",");
 
-    while ($row = fgetcsv($handle, 1000, ",")) {
-        $nota[] = array_combine($header, $row);
+    while ($row = fgetcsv($arquivo, 1000, ",")) {
+        $usuarios[] = array_combine($header, $row);
     }
-    print_r($nota);
+    print_r($usuarios);
 
-    fclose($handle);    
+    fclose($arquivo);    
     }
 
 }
