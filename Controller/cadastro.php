@@ -18,10 +18,6 @@ $csv = new ArquivosCsv();
 //inicia a classe emails
 $mail = new Emails();
 
-$
-
 $mail->enviar_email($email, $nome, $senha, $tag);
-
-
 
 ?>
