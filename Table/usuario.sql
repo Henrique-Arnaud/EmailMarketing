@@ -50,6 +50,11 @@ ALTER TABLE `usuario`
 --
 
 --
+-- UPDATE tables
+--
+ UPDATE 'usuario'
+ SET '' = ''
+--
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
