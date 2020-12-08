@@ -2,16 +2,16 @@
 class ArquivosCsv{
 
     function ler_arquivo(){
-    $arquivo = fopen("../Model/malling.csv", "r");
+        $arquivo = fopen("../Model/malling.csv", "r");
 
-    $header = fgetcsv($arquivo, 1000, ";");
+        $header = fgetcsv($arquivo, 1000, ";");
 
-    while ($row = fgetcsv($arquivo, 1000, ",")) {
-        $usuarios[] = array_combine($header, $row);
-    }
-    print_r($usuarios);
+        while ($row = fgetcsv($arquivo, 1000, ",")) {
+            $usuarios[] = array_combine($header, $row);
+        }
+        print_r($usuarios);
 
-    fclose($arquivo);    
+        fclose($arquivo);    
     }
 
     function populaBanco(){
