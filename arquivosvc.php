@@ -1,5 +1,7 @@
 <?php 
 class ArquivosSvc{
 
+    function 
+
 }
 ?>
