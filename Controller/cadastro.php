@@ -65,7 +65,7 @@ $mail->CharSet = 'UTF-8';
 $mail->Subject = "Assunto da mensagem"; 
 
 // Corpo do email 
-$mail->msgHTML(file_get_contents('email.html'), __DIR__);
+$mail->msgHTML(file_get_contents('../View/email.html'), __DIR__);
 // Opcional: Anexos 
 // $mail->AddAttachment("/home/usuario/public_html/documento.pdf", "documento.pdf"); 
 

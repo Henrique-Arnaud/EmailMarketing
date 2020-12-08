@@ -2,7 +2,7 @@
 class ArquivosCsv{
 
     function ler_arquivo(){
-        $handle = fopen("file.csv", "r");
+        $handle = fopen("../Model/file.csv", "r");
 
     $header = fgetcsv($handle, 1000, ",");
 
