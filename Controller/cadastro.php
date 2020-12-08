@@ -12,6 +12,7 @@ require 'vendor/autoload.php';
 $email = $_POST['email'];
 $nome = $_POST['nome'];
 
+
 $senha = new Senha();
 
 //inicia a classe de ler arquivos csv
