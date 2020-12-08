@@ -3,6 +3,7 @@
 include('senha.php');
 include('arquivocsv.php');
 include('emails.php');
+include('../Model/conexao.php');
 
 $email = $_POST['email'];
 $nome = $_POST['nome'];
@@ -17,6 +18,10 @@ $csv = new ArquivosCsv();
 //inicia a classe emails
 $mail = new Emails();
 
+$
+
 $mail->enviar_email($email, $nome, $senha, $tag);
+
+
 
 ?>
