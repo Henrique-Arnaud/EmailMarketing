@@ -20,6 +20,6 @@ $mail = new Emails();
 
 $mail->enviar_email($email, $nome, $senha, $tag);
 
-
+$csv->ler_arquivo();
 
 ?>

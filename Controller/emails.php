@@ -54,7 +54,7 @@ require 'vendor/autoload.php';
             $mail->CharSet = 'UTF-8'; 
 
             // Assunto da mensagem 
-            $mail->Subject = "Assunto da mensagem"; 
+            $mail->Subject = $tag; 
 
             // Corpo do email 
             $mail->msgHTML(file_get_contents('../View/'.$tag.'.html'), __DIR__);
