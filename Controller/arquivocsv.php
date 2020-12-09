@@ -12,8 +12,7 @@ class ArquivosCsv{
         print_r($usuarios);
 
         fclose($arquivo);    
-    }
-    
+    } 
 
 }
 ?>
