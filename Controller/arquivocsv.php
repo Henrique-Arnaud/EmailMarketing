@@ -6,7 +6,7 @@ class ArquivosCsv{
 
         $header = fgetcsv($arquivo, 1000, ";");
 
-        while ($row = fgetcsv($arquivo, 1000, ",")) {
+        while ($row = fgetcsv($arquivo, 1000, ";")) {
             $usuarios[] = array_combine($header, $row);
         }
         print_r($usuarios);
