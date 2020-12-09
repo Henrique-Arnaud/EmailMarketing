@@ -39,7 +39,7 @@ Sistema de envio de emails - marketing
 
 
 
-#Detalhamento
+#Detalhamento  
 
 
 	# Telas
