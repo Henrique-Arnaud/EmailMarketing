@@ -46,7 +46,7 @@ Sistema de envio de emails - marketing
 		Implementar um tela de Configuração de Servidor de envio(SMTP) que contenha os seguintes campos: Host,login/email,porta,senha e o evento com a possibilidade de Salvar na tabela de configuracoes no banco de dados, pondendo escolher o evento, e posteriormente editar esse registro. 
 
 		Tela de Eventos : 
-
+		
 
 		Tela upload de listas de emails(poder escolher evento)
 		
