@@ -15,3 +15,6 @@ Enviar um email marketing podendo
 * Cadastrar modelos de email
 * Editar modelo de email
 * Editar configurações de envio
+
+
+**Ivinson entrei no 
